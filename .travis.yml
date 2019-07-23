@@ -1,9 +1,2 @@
 language: node_js
 node_js: node
-deploy: immense-depths-85900
-  provider: heroku
-  api_key:
-    secure: Offiq0HHdjg1RjaDy5ZF7lp9jwPYc3HQe7O2mnw2HWjUlSmnPP5DiCDEZkNUWfFQOJ0qxhuEJb8RSENNuiSFT1KE88uUGtllYr0ROHJR3bt6e+sijdLaIRooc32d/TIULz+Q7iKBGOhvWJjlfQ4wJNQTkUozh8Gtgg4yDVotHdfVaBrEnvQL9yEBjnxDnjqqIQS2Opx4tCx5IChWr+bUPS7jrTKLbHemOogi1qJ/ViVHZ5x3d26+kNByP4cUlK5+tzQCW6NOlUK9Q4qPV0gmQ0CQubUZiwnj056kZg5oA0eYd6FnXxo2AKlOlb1m5fnLZmHh/DtCylbuGqSSDRLgC50uVOZtnYgnF3bLoXWz76iChIReqFu8MqvzpA9rhkz5JLxxHdChqlAETqR10e8UpXOePtzu6iqOjvfqXWjrlDXV7sBu9ZN+5LNNdNhhIGO0XHmBU7RL+VE+gMeYXzWvq9nb5ynZdIT5PHiEAyoFY24LY03PoA9BxBjMCExi/KxAQxdKUBf4x/je/pTFQrJ+sElRVmL+XnNillbI8e+awIEBD0b8W6RZgYq1MMTVuobB8t9bqYb06orTR9sGoyFqHGBm2NuWVfnJvH3WFYS0YNcDDR8zr0ZQrXH4Iz4zcJnbfdMAslcOHtxRqiLnwz8IiSB0rkjyeD7oNwqby0+n/zo=
-  app: 'node_js:'
-  on:
-    repo: VulcanMeld/blog-api-challenge
