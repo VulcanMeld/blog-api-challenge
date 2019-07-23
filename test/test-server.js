@@ -33,4 +33,17 @@ describe('blog-posts', function() {
 
         })
     })
+
+    it('should add a new blog post to list of posts and then return the new post', function(){
+        const testPost = {"title": "Test Post", "content": "This is a test.", "author": "Sir TestALot"}
+        return chai.request(app)
+        .post('/blog-posts')
+        .send(testPost)
+        .then(function(res){
+            expect(res.body).to.be.an('object')
+            const expectedKeys = ["id","title","content","author","publishDate"]
+            expect(res.body).to.include.keys(expectedKeys)
+
+        })
+    })
 })
