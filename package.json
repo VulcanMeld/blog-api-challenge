@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/VulcanMeld/blog-api-challenge/issues"
   },
-  "homepage": "https://github.com/VulcanMeld/blog-api-challenge#readme",
+  "homepage": "https://github.com/VulcanMeld/blog-api-challengereadme",
   "dependencies": {
     "express": "^4.17.1",
     "morgan": "^1.9.1",
