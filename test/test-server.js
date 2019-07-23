@@ -25,6 +25,11 @@ describe('blog-posts', function() {
         .then(function(res){
             expect(res.body).to.have.lengthOf.at.least(2)
             expect(res.body).to.be.an('array')
+            const expectedKeys = ["id","title","content","author","publishDate"]
+            res.body.forEach(function(post){
+                expect(post).to.include.keys(expectedKeys)
+
+            })
 
         })
     })
