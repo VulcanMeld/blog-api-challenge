@@ -47,7 +47,7 @@ describe('blog-posts', function() {
         })
     })
 
-    it('should update a post in the list of posts then return updated post', function(){
+    it('should update a post in the list of posts then return array containing updated post', function(){
         const updatedPost = {"title":"Updated","content": "This is updated content."}
         return chai.request(app)
         .get('/blog-posts')
@@ -65,6 +65,21 @@ describe('blog-posts', function() {
                 
             })
 
+        })
+    })
+
+    it('should delete a post from the list of posts then return updated list of posts', function(){
+        let id;
+        return chai.request(app)
+        .get('/blog-posts')
+        .then(function(res){
+            id = res.body[0].id
+            return chai.request(app)
+            .delete(`/blog-posts/${id}`)
+            .send(id)
+            .then(function(res){
+                expect(res).to.have.status(200)
+            })
         })
     })
 })
