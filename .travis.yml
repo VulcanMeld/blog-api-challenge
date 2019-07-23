@@ -1,2 +1,9 @@
 language: node_js
 node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: gvHkeW77CkVY9LfVETvZ7RC4xE3kNuArtTIVORVJ/Es9XF+J0rGtp2mUuZME+pXIFmiNMveGyvEirxP9nuQRftcHCTe7Acgg0UvqAqSeuMh8TVGjUFu8tP4exkXCJiqSGhu7mivwOhhBkIj/RqHhlN5TwHhlgD90sjB7/8iSNvdjoZQqkuROFh8pmGRoU/QBCfsHXVY6eimwO2srUMUD0V/zcWv52cNtDVopH0y4vBkss+NhbEX0/MqDykZey3il67jjBpwCyH8E6+ygv/EvlimaQ62589ZJmhz74YqmlZXgt1a5/hK+DfJd19LqBJCV8Iby2MJykEsi66gpUEPMXQBdgd0Ufdn50drXR0f6bKDY6F7FQKzrff8/01aQoZKVfKRARbr6FP+HVn+mBwwXZZ59+kOJB7gMDgYf+phLpIDTHtdJ+F6KKzUgQacQmPVANHotvxEYM9eS2lJWtzeQ1XcExxqB3davqjkJeLpMJy5KeIgOlbJdiR4FtGyXuPFMmnIlKPUrlSFZP7XSr04RgK7jPAkHTqyul6pm7EAmwDPSvnJvCuAfkS99WwlcXpgT97Mu/OArm82cN240HO7vS0PZC/fBe354i8tQ8TwBlVN6WNeBg3w2tKvSIq8qUTFPA2Y/32GdYb0FfyP3LfAVxMWRTAlSy0rFRnyq+UFlVjI=
+  app: thawing-ocean-15830
+  on:
+    repo: VulcanMeld/blog-api-challenge
